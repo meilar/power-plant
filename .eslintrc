@@ -3,17 +3,34 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
   },
-  "extends": "eslint:recommended",
+  "extends": "plugin:fp/recommended",
   "env": {
     "es6": true,
     "browser": true,
     "jquery": true,
     "node": true
   },
+  "plugins": [
+    "fp"
+  ],
   "rules": {
-      "semi": 1,
-      "indent": ["warn", 2],
-      "no-console": "warn",
-      "no-debugger": "warn"
+    "fp/no-arguments": "error",
+    "fp/no-class": "warn",
+    "fp/no-delete": "error",
+    "fp/no-events": "error",
+    "fp/no-get-set": "error",
+    "fp/no-let": "warn",
+    "fp/no-loops": "error",
+    "fp/no-mutating-assign": "error",
+    "fp/no-mutating-methods": "error",
+    "fp/no-mutation": "warn",
+    "fp/no-nil": "warn",
+    "fp/no-proxy": "error",
+    "fp/no-rest-parameters": "error",
+    "fp/no-this": "warn",
+    "fp/no-throw": "error",
+    "fp/no-unused-expression": "warn",
+    "fp/no-valueof-field": "error",
+    "no-var": "error"
   }
 }
